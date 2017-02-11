@@ -1,0 +1,14 @@
+version: 0.0
+os: windows
+files:
+  - source: .
+    destination: c:\app
+hooks:
+  BeforeInstall:
+    - location: Deployment/beforeinstall.ps1
+  ApplicationStart:
+    - location: Deployment/start.ps1
+      timeout: 180
+  ValidateService:
+    - location: Deployment/validate.ps1
+      timeout: 180
