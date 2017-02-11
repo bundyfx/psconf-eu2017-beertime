@@ -4,7 +4,7 @@ files:
   - source: \
     destination: c:\app
 hooks:
-  Install:
+  AfterInstall:
     - location: Deployment\install.ps1
   ApplicationStart:
     - location: Deployment\start.ps1
