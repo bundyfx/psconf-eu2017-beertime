@@ -1,5 +1,5 @@
 Set-Location C:\App
-& npm install
+& 'C:\Program Files\nodejs\npm.cmd' install
 
 if ($LASTEXITCODE -eq 0)
 {
