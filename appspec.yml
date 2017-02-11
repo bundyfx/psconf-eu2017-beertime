@@ -4,8 +4,8 @@ files:
   - source: \
     destination: c:\app
 hooks:
-  BeforeInstall:
-    - location: Deployment\beforeinstall.ps1
+  Install:
+    - location: Deployment\install.ps1
   ApplicationStart:
     - location: Deployment\start.ps1
       timeout: 180
