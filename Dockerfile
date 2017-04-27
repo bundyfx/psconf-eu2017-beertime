@@ -1,9 +1,9 @@
 FROM bundyfx/nanoservernodejs
 
-WORKDIR C:\app
+WORKDIR C:\\src
 
-ADD . C:\app
+ADD . C:\\src
 
-CMD npm install
+RUN npm.exe install
 
-CMD npm start
+CMD npm.exe start
