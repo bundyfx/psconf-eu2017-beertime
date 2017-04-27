@@ -4,6 +4,6 @@ WORKDIR C:\\src
 
 ADD . C:\\src
 
-RUN npm.exe install
+RUN npm.cmd install
 
-CMD npm.exe start
+CMD npm.cmd start
